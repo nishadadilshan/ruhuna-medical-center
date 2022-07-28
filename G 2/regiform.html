@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<head>
+<title>Student Registstion</title>
+
+
+
+<script type="text/javascript" src="validation.js">
+</script>
+<link rel="stylesheet" type="text/css" href="css/regiform.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<div class="mar">
+	<header>
+		<div class="header-wrapper" style="height:130px">
+			<table style="border:none;">
+					<tr>
+					  <td style="border:none; width:90px "><img src="unilogo.png" alt="unilogo" hight="100%" width="100%" ></td>
+					  <td>
+						<h1 style="font-size: 48px"><a style="color:rgb(255, 255, 255);text-decoration:none;">Medical Center<br></a><span style="color:black">
+						  <h3>University of Ruhuna</h3>
+						  <h5 style="color:rgb(0, 0, 0)"><b> ප්‍රතිකාරයට පෙර නිවාරණය</b></h5>
+						  
+					  </td>
+
+					</tr>
+				  </table>
+
+	</div>
+	</header>
+	 
+
+	<div class="navbarS" style="display: inline-block">
+		<a href="index.html">Home</a>
+		<a href="regiform.html">Registration</a>
+		<a href="staff.html">Staff</a>
+
+		<div class="dropdownS">
+			<button class="dropbtnS">Facilities
+			</button>
+			<div class="dropdown-contentS">
+				<a href="pharmacy.html">Pharmacy</a>
+				<a href="labs.html">Laboratary</a>
+				<a href="dental.html">Dental Facility</a>
+				<a href="emgncy.html">Emergency Services</a>
+				<a href="medirepots.html">Medical Reports</a>
+			</div>
+		</div>
+		<a href="contact.html">Contact Us</a>
+		<a href="aboutus.html">About Us</a>
+	</div>
+	
+ <div style="height:50px;background-color:#F5F5F5;padding-top:0px;margin-right:200px;margin-left:50px;margin-bottom:20px;">
+	<h1 style="margin-top:10px;margin-left:0px;border-left:5px solid rgb(177, 41, 147);">Student Registation form for MEDICAL CENTER</h1>
+	<hr style="margin-right:00px;margin-left:0px;">
+</div>
+
+		<div style="margin-left:50px;">
+
+	
+	 <div style="height:auto;background-color:#F5F5F5;padding-top:0px;margin-right:800px;margin-bottom:30px;">
+	<h3 style="margin-top:10px;margin-left:0px;border-left:5px solid blue;">Student's Details</h3>
+</div>
+
+<table>	
+	<form name="studentinfo" action="" onsubmit="return formvalidation()" method="post">
+	<tr>
+		<td>Full Name:</td>
+		<td align="left"><input type="text" name="Studentname"></td>
+	</tr>
+	<tr>
+		<td>Home Address:</td>
+		<td><textarea rows="5" cols="50"></textarea></td>
+	</tr>
+	<tr>
+		<td>Telephones:</td>
+		<td>Mobile:<input type="text" name="phone"></td>
+		<td>Home:<input type="text" name="lphone"></td>	
+	</tr>
+	<tr>
+		<td>Student Registation No.:</td>
+		<td><input type="text" name="stno"></td>
+	</tr>
+	<tr>
+		<td>Date of Birth:</td>
+		<td><input type="date" name="dob"></td>
+		<td>Age:<input type="text" name="age1"></td>
+	</tr>
+	<tr>
+		<td>Marital Status:</td>
+		<td><input type="radio" name="married" value="married">Married
+		<input type="radio" name="married" value="married" >Unmarried</td>	
+		<td>Gender:<select>
+			<option value="male">Male</option>
+			<option value="male">Female</option>
+		</td>
+	</tr>
+	<tr>
+		<td>Faculty:</td>
+		<td><select>
+			<option value="Science">Science</option>
+			<option value="Art">Art</option>
+			<option value="Fishery">Fishery</option>
+			<option value="Managment">Managment</option>
+			</td>
+	</tr>
+	<tr>
+		<td>Combination:</td>	
+		<td><input type="text" name="sub"></td>
+	</tr>
+
+</table>
+
+
+
+
+<div style="height:auto;background-color:#F5F5F5;padding-top:0px;margin-right:800px;margin-bottom:30px;">
+	<h3 style="margin-top:10px;margin-left:0px;border-left:5px solid red;">Family Details</h3>
+</div><table>
+
+	<tr>
+		<td>Father:</td>
+		<td>
+			<input type="radio" name="alive" value="alive">Alive
+			<input type="radio" name="alive" value="dead">Dead
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="3"></td>
+		<td>Age:<input type="text" name="age2"></td>
+	</tr>
+	<tr>
+		
+		<td>Occupation:<input type="text" name="Occupation1"></td>
+	</tr>
+	<tr>
+		
+		<td>Mobile Number:<input type="text" name="mnum1"></td>
+	</tr>
+	<tr>
+	<td>Mother:</td>
+		<td>
+			<input type="radio" name="nalive" value="alive">Alive
+			<input type="radio" name="nalive" value="dead">Dead
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="3"></td>
+		<td>Age:<input type="text" name="age3"></td>
+	</tr>
+	<tr>
+		
+		<td>Occupation:<input type="text" name="Occupation2"></td>
+	</tr>
+	<tr>
+		
+		<td>Mobile Number:<input type="text" name="mnum2"></td>
+	</tr>
+	<tr>
+		<td>Siblings:</td>
+		<td>Sisters:<select>
+			<option value="sis">None</option>
+			<option value="sis">one</option>
+			<option value="sis">two</option>
+			<option value="sis">three</option>
+		</select></td>
+		<td>Brothers:<select>
+			<option value="bro">None</option>
+			<option value="bro">one</option>
+			<option value="bro">two</option>
+			<option value="bro">three</option>
+		</select></td>
+
+	</tr>
+
+</table>
+<div style="height:auto;background-color:#F5F5F5;padding-top:0px;margin-right:800px;margin-bottom:30px;">
+	<h3 style="margin-top:10px;margin-left:0px;border-left:5px solid green;">Personal Details</h3>
+</div>
+<table>
+
+	
+		<tr>
+			<td>Height:</td>
+			<td><input type="text" name="Height"></td>
+		</tr>
+		<tr>
+			<td>Weight:</td>
+			<td><input type="text" name="Weight"></td>
+
+		</tr>
+		<tr>
+			<td>BMI:</td>
+			<td><input type="text" name="bmi"></td>
+		</tr>
+		<tr>
+			<td>Boold Group:</td>
+			<td><select>
+				<option value="bld">O+</option>
+				<option value="bld">O-</option>
+				<option value="bld">A+</option>
+				<option value="bld">A-</option>
+				<option value="bld">B+</option>
+				<option value="bld">B-</option>
+				<option value="bld">AB+</option>
+				<option value="bld">AB-</option>
+			</select></td>
+	</tr>
+	<tr>
+		<td>Vision:</td>
+		<td><input type="radio" name="vision" value="usespecs">Using Spectacals<input type="radio" name="vision" value="none">None</td>
+	</tr>
+	<tr>
+		<td>Non-infection Diseases:</td>
+		<td>
+			<input type="checkbox" name="cancer" value="cancer">Cancer<br>
+		</td>
+	<tr>
+		<td rowspan="4"></td>
+		<td>
+			<input type="checkbox" name="heart desease" value="hd">Heart Deseases<br>
+		</td>
+	</tr>
+	<tr>	
+		<td>	
+			<input type="checkbox" name="diabetes" value="diabetes">Diabetes<br>
+		</td>
+	</tr>
+	<tr>	
+		<td>	
+			<input type="checkbox" name="blood presure" value="blood presure">Blood Presure<br>
+		</td>
+	</tr>
+	<tr>	
+		<td>
+			<input type="checkbox" name="other" value="other">Other
+		</td>
+	</tr>
+	</table>
+
+	<table>
+		<td><input type="submit" name="submit" value="submit">
+			<input type="reset" name="reset" value="reset"></td>
+	</table>
+</form>
+</div>
+</div>
+<hr>
+<h3 style="margin-left:50px;color:brown;">You Must Completely Fill the Form Before You Register the Medical Center!</h3>
+<hr>
+    <footer>
+		        
+				<div style="background-color:black;padding-left:70px;padding-top:20px;">
+              <h5 style="color:white;">How to find us</h5>
+				<address>
+					<strong style="color:white";>Under the Chemistry Department</strong><br>
+				</address>
+              <p style="color:white";>
+                <i class="icon-phone"></i>Hot-line :(+94) 041-2222681 , (+94) 041-2222682<br>
+              </p>
+
+			<div >
+              <p style="color:white;height:100px;background-color:black;padding-top:20px;">
+                &copy;All right reserved<br>
+				Created by BCS Students in Unversity Of Ruhuna
+              </p>	
+            </div>
+      </div>
+
+	</footer>
+</body>
+</html>
